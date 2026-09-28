@@ -1,15 +1,14 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
+import { useTranslation } from 'react-i18next'
+import { Navbar } from './components/Navbar'
+import { Hero } from './components/Hero'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const { t, i18n } = useTranslation()
 
   return (
-    <div className='min-h-screen bg-night flex items-center justify-center'>
-      <h1 className='text-lavender text-4xl'>Camillia</h1>
+    <div className='min-h-screen bg-night'>
+      <Navbar />
+      <Hero />
     </div>
   )
 }
