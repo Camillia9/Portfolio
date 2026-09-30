@@ -1,6 +1,15 @@
 {
   "hero": {
     "role": "Full-stack Developer · École 42 Paris",
-    "status": "Available for a work-study position starting in November 2026"
-  }
+    "status": "Available for a work-study position starting in November 2026",
+    "ctaProjects": "View my projects",
+    "ctaCv": "Download my CV"
+  },
+  "about": {
+    "title": "About me",
+    "p1": "I arrived at École 42 without knowing what to expect and discovered software development through hands-on practice—ranging from low-level C programming to full-scale web applications. After exploring both front-end and back-end development, I found my niche in full-stack work. What I love is creating tools that are genuinely useful to their users and finally seeing everything work after a long debugging session.",
+    "p2": "I have completed the core curriculum and am working towards the RNCP Level 7 qualification at 42. I am looking for a work-study position (or an internship) starting in November 2026, to join a team where I can contribute and learn new technologies.",
+    "p3": "Before 42, I completed a work-study program—so I’m well-acquainted with the balance between working and training.",
+    "skillsTitle": "Skills"
+}
 }
