@@ -7,9 +7,9 @@
   },
   "about": {
     "title": "About me",
-    "p1": "I arrived at École 42 without knowing what to expect and discovered software development through hands-on practice—ranging from low-level C programming to full-scale web applications. After exploring both front-end and back-end development, I found my niche in full-stack work. What I love is creating tools that are genuinely useful to their users and finally seeing everything work after a long debugging session.",
-    "p2": "I have completed the core curriculum and am working towards the RNCP Level 7 qualification at 42. I am looking for a work-study position (or an internship) starting in November 2026, to join a team where I can contribute and learn new technologies.",
-    "p3": "Before 42, I completed a work-study program—so I’m well-acquainted with the balance between working and training.",
+    "p1": "I joined École 42 without knowing what to expect, and I discovered software development through hands-on practice, from low-level C programming to complete web applications. After exploring both front-end and back-end development, I found my place in full-stack work. What I love is building tools that are truly useful to the people who use them, and finally seeing everything work after a long debugging session.",
+    "p2": "I've completed the core curriculum and I'm now working towards 42's RNCP Level 7 qualification. I'm looking for a work-study position (or an internship) starting in November 2026, to join a team where I can contribute and keep learning new technologies.",
+    "p3": "Before 42, I spent two years in a work-study program, so I know how to balance work and studies.",
     "skillsTitle": "Skills"
 }
 }
