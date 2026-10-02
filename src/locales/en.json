@@ -17,5 +17,16 @@
     "p2": "I've completed the core curriculum and I'm now working towards 42's RNCP Level 7 qualification. I'm looking for a work-study position (or an internship) starting in November 2026, to join a team where I can contribute and keep learning new technologies.",
     "p3": "Before 42, I spent two years in a work-study program, so I know how to balance work and studies.",
     "skillsTitle": "Skills"
-}
+  },
+
+  "channel": {
+    "joined": "you have joined",
+    "topics": {
+      "about": "Who is Camillia?",
+      "skills": "The technologies I work with",
+      "contact": "Get in touch, download my CV",
+      "ft_transcendence": "Collaborative project management, Trello-style",
+      "ft_irc": "Multi-client messaging server in C++"
+    }
+  }
 }

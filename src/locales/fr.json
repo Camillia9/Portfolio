@@ -17,5 +17,16 @@
     "p2": "J'ai terminé le tronc commun et je prépare le titre RNCP niveau 7 de 42. Je recherche une alternance (ou un stage) à partir de novembre 2026, pour rejoindre une équipe où je pourrai contribuer et apprendre de nouvelles technos.",
     "p3": "Avant 42, j'ai suivi un BTS en alternance : le rythme entreprise / formation, je connais.",
     "skillsTitle": "Compétences"
-}
+  },
+
+  "channel": {
+    "joined": "vous avez rejoint",
+    "topics": {
+      "about": "Qui est Camillia ?",
+      "skills": "Les technos que j'utilise",
+      "contact": "Me joindre, télécharger mon CV",
+      "ft_transcendence": "Gestion de projet collaborative façon Trello",
+      "ft_irc": "Serveur de messagerie multi-clients en C++"
+    }
+  }
 }
