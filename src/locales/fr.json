@@ -1,10 +1,16 @@
 {
+  "sidebar": {
+    "general": "Général",
+    "projects": "Projets"
+  },
+
   "hero": {
     "role": "Développeuse fullstack · École 42 Paris",
     "status": "Disponible pour une alternance dès novembre 2026",
     "ctaProjects": "Voir mes projets",
     "ctaCv": "Télécharger mon CV"
   },
+  
   "about": {
     "title": "À propos",
     "p1": "Arrivée à l'École 42 sans savoir à quoi m'attendre, j'y ai découvert le développement par la pratique : du C bas niveau aux applications web complètes. Après avoir testé le front-end, le back-end et la cybersécurité, j'ai trouvé ma place dans le fullstack. Ce que j'aime : créer des outils qui ont une vraie utilité pour ceux qui les utilisent, et voir enfin tout fonctionner après une longue session de debug.",
