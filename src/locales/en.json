@@ -28,5 +28,26 @@
       "ft_transcendence": "Collaborative project management, Trello-style",
       "ft_irc": "Multi-client messaging server in C++"
     }
+  },
+
+  "skills": {
+    "groups": {
+      "languages": "Languages",
+      "frontend": "Front-end",
+      "backend": "Back-end",
+      "tools": "Tools & systems",
+      "soft": "Soft skills"
+    },
+    "refs": {
+      "common_core": "42 core curriculum",
+      "cpp_pool": "C++ Piscine",
+      "shell_pool": "Shell Piscine",
+      "push_swap": "push_swap",
+      "minishell": "minishell",
+      "inception": "Inception",
+      "all_projects": "all my projects"
+    },
+    "basics": "basics",
+    "soft": ["Team lead", "Task distribution", "Teamwork", "Methodical debugging"]
   }
 }

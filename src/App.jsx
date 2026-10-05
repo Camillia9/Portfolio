@@ -29,7 +29,7 @@ export default function App() {
         />
         <main className="flex-1 p-4 md:p-6">
           <ChannelHeader id={activeChannel} />
-          {ActiveChannel ? <ActiveChannel /> : <p className='text-white/60 mt-4'>Bientot...</p>}
+          {ActiveChannel ? <ActiveChannel onSelect={setActiveChannel} /> : <p className='text-white/60 mt-4'>Bientot...</p>}
         </main>
       </div>
     </div>

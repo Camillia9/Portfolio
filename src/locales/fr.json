@@ -28,5 +28,26 @@
       "ft_transcendence": "Gestion de projet collaborative façon Trello",
       "ft_irc": "Serveur de messagerie multi-clients en C++"
     }
+  },
+
+  "skills": {
+    "groups": {
+      "languages": "Langages",
+      "frontend": "Front-end",
+      "backend": "Back-end",
+      "tools": "Outils & système",
+      "soft": "Savoir-être"
+    },
+    "refs": {
+      "common_core": "tronc commun 42",
+      "cpp_pool": "Piscine C++",
+      "shell_pool": "Piscine Shell",
+      "push_swap": "push_swap",
+      "minishell": "minishell",
+      "inception": "Inception",
+      "all_projects": "tous mes projets"
+    },
+    "basics": "notions",
+    "soft": ["Lead d'équipe", "Répartition des tâches", "Travail en équipe", "Débogage méthodique"]
   }
 }
