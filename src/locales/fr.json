@@ -26,7 +26,9 @@
       "skills": "Les technos que j'utilise",
       "contact": "Me joindre, télécharger mon CV",
       "ft_transcendence": "Gestion de projet collaborative façon Trello",
-      "ft_irc": "Serveur de messagerie multi-clients en C++"
+      "ft_irc": "Serveur de messagerie multi-clients en C++",
+      "minishell": "Un shell Unix simplifié, inspiré de bash",
+      "cub3d": "Un moteur 3D par raycasting, façon Wolfenstein 3D"
     }
   },
 
@@ -39,6 +41,7 @@
       "soft": "Savoir-être"
     },
     "refs": {
+      "42_pool": "Piscine",
       "common_core": "tronc commun 42",
       "cpp_pool": "Piscine C++",
       "shell_pool": "Piscine Shell",
@@ -78,6 +81,16 @@
       "overview": "Un serveur de messagerie qui gère plusieurs clients connectés en même temps, avec messages privés et channels. Le principe de Discord, sans interface graphique.",
       "role": "Lead de l'équipe. J'ai mis en place la gestion simultanée des connexions avec poll(), implémenté la majorité des commandes IRC et une partie des messages d'erreur du protocole, et développé le bonus : un bot qui rejoint automatiquement un channel et répond aux utilisateurs.",
       "tests": "Testé avec irssi, un vrai client IRC, et avec netcat. Le serveur respecte donc le protocole utilisé par les clients existants."
+    },
+    "minishell": {
+      "overview": "Un shell Unix simplifié, inspiré de bash et codé en C. Il lit et analyse les commandes, puis les exécute en gérant les pipes, les redirections, le heredoc, les variables d'environnement et les signaux.",
+      "role": "J'ai développé les builtins (cd, echo, export…) et une grande partie de l'exécution : création des processus avec fork et execve, pipes, redirections et gestion des signaux.",
+      "challenge": "Faire fonctionner ensemble le parsing et l'exécution, développés chacun de leur côté. Leur assemblage a fait apparaître de nombreux bugs, en particulier sur le heredoc, qui doit à la fois lire l'entrée de l'utilisateur, gérer les signaux et transmettre son contenu à la bonne commande."
+    },
+    "cub3d": {
+      "overview": "Un moteur de jeu en vue subjective, façon Wolfenstein 3D, codé en C. À partir d'une carte en 2D, il affiche un labyrinthe texturé en 3D, dans lequel le joueur se déplace en temps réel.",
+      "role": "J'ai développé tout le raycasting : lancer un rayon par colonne de l'écran, calculer la distance jusqu'au mur touché, puis en déduire la hauteur du mur à dessiner pour créer l'illusion de la 3D.",
+      "challenge": "Les calculs géométriques, et en particulier l'effet « fish-eye », qui courbait les murs sur les bords de l'écran. Il se corrige en utilisant la distance perpendiculaire au plan de la caméra, plutôt que la longueur réelle du rayon."
     }
   }
 }

@@ -26,7 +26,9 @@
       "skills": "The technologies I work with",
       "contact": "Get in touch, download my CV",
       "ft_transcendence": "Collaborative project management, Trello-style",
-      "ft_irc": "Multi-client messaging server in C++"
+      "ft_irc": "Multi-client messaging server in C++",
+      "minishell": "A simplified Unix shell, inspired by bash",
+      "cub3d": "A raycasting 3D engine, Wolfenstein 3D-style"
     }
   },
 
@@ -39,6 +41,7 @@
       "soft": "Soft skills"
     },
     "refs": {
+      "42_pool": "Piscine",
       "common_core": "42 core curriculum",
       "cpp_pool": "C++ Piscine",
       "shell_pool": "Shell Piscine",
@@ -78,6 +81,16 @@
       "overview": "A messaging server that handles multiple connected clients at the same time, with private messages and channels. Like Discord, without a graphical interface.",
       "role": "Team lead. I set up concurrent connection handling with poll(), implemented most of the IRC commands and some of the protocol's error replies, and built the bonus: a bot that automatically joins a channel and replies to users.",
       "tests": "Tested with irssi, a real IRC client, and with netcat, so the server follows the protocol used by existing clients."
+    },
+    "minishell": {
+      "overview": "A simplified Unix shell inspired by bash, written in C. It reads and parses commands, then executes them with support for pipes, redirections, heredoc, environment variables and signals.",
+      "role": "I built the builtins (cd, echo, export…) and most of the execution: process creation with fork and execve, pipes, redirections and signal handling.",
+      "challenge": "Making the parsing and the execution, each developed separately, work together. Combining them revealed many bugs, especially with heredoc, which has to read user input, handle signals and pass its content to the right command."
+    },
+    "cub3d": {
+      "overview": "A first-person game engine, Wolfenstein 3D-style, written in C. From a 2D map, it renders a textured 3D maze that the player can move through in real time.",
+      "role": "I built the entire raycasting: casting one ray per screen column, computing the distance to the wall it hits, then deriving the height of the wall to draw to create the illusion of 3D.",
+      "challenge": "The geometry, especially the fish-eye effect, which curved the walls at the edges of the screen. It's fixed by using the perpendicular distance to the camera plane instead of the actual length of the ray."
     }
   }
 }

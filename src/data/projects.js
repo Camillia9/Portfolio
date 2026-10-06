@@ -13,4 +13,18 @@ export const projects = {
     repo: 'https://github.com/Camillia9/IRC',
     pinned: ['overview', 'role', 'tests'],
   },
+  minishell: {
+    stack: ['C', 'fork', 'execve', 'pipes', 'signals'],
+    lead: 'null',
+    members: ['Camillia', 'Mary-Line'],
+    repo: 'https://github.com/Camillia9/minishell',
+    pinned: ['overview', 'role', 'challenge'],
+  },
+    cub3D: {
+    stack: ['C', 'raycasting', 'MiniLibX'],
+    lead: 'null',
+    members: ['Camillia', 'Mary-Line'],
+    repo: 'https://github.com/Camillia9/cub3d',
+    pinned: ['overview', 'role', 'challenge'],
+  },
 }

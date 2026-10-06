@@ -2,8 +2,8 @@ export const skillGroups = [
   {
     id: 'languages',
     items: [
-      { name: 'C', refs: ['common_core', 'push_swap', 'minishell'] },
-      { name: 'C++', refs: ['cpp_pool', 'ft_irc'] },
+      { name: 'C', refs: ['common_core'] },
+      { name: 'C++', refs: ['cpp_pool'] },
       { name: 'JavaScript', refs: ['ft_transcendence'] },
     ],
   },
