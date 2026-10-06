@@ -6,11 +6,14 @@ import MobileChannels from './components/MobileChannels'
 import ChannelHeader from './components/ChannelHeader'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
+import ProjectChannel from './components/ProjectChannel'
 
 const channelComponents = {
   about: About,
   skills: Skills,
   contact: Contact,
+  ft_transcendence: ProjectChannel,
+  ft_irc: ProjectChannel,
 }
 
 export default function App() {
@@ -31,7 +34,11 @@ export default function App() {
         />
         <main className="flex-1 p-4 md:p-6">
           <ChannelHeader id={activeChannel} />
-          {ActiveChannel ? <ActiveChannel onSelect={setActiveChannel} /> : <p className='text-white/60 mt-4'>Bientot...</p>}
+          {ActiveChannel ? (
+            <ActiveChannel key={activeChannel} id={activeChannel} onSelect={setActiveChannel} />
+          ) : (
+            <p className="text-white/60 mt-4">Bientôt…</p>
+          )}
         </main>
       </div>
     </div>

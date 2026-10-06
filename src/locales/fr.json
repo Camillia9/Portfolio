@@ -55,5 +55,29 @@
     "intro": "Une alternance, un stage, ou simplement une question ? N'hésitez pas à m'écrire.",
     "copy": "copier",
     "copied": "copié ✓"
+  },
+
+  "projects": {
+    "labels": {
+      "modes": "modes",
+      "members": "Membres",
+      "repo": "Voir le code sur GitHub"
+    },
+    "pinnedTitles": {
+      "overview": "Le projet",
+      "role": "Mon rôle",
+      "challenge": "Le défi",
+      "tests": "Les tests"
+    },
+    "ft_transcendence": {
+      "overview": "Une application web de gestion de projet collaborative, dans l'esprit de Trello. On crée une organisation, plusieurs projets, et chacun répartit et suit ses tâches sur un tableau.",
+      "role": "Lead de l'équipe : organisation et répartition du travail. J'ai développé le front-end et l'intégration avec le back-end via les appels API.",
+      "challenge": "Une phase où chaque correction provoquait de nouvelles régressions. Nous avons trié les bugs par impact pour traiter en premier ceux qui en provoquaient d'autres, attribué chaque partie à un responsable, et synchronisé le code après chaque modification pour toujours travailler sur une base à jour."
+    },
+    "ft_irc": {
+      "overview": "Un serveur de messagerie qui gère plusieurs clients connectés en même temps, avec messages privés et channels. Le principe de Discord, sans interface graphique.",
+      "role": "Lead de l'équipe. J'ai mis en place la gestion simultanée des connexions avec poll(), implémenté la majorité des commandes IRC et une partie des messages d'erreur du protocole, et développé le bonus : un bot qui rejoint automatiquement un channel et répond aux utilisateurs.",
+      "tests": "Testé avec irssi, un vrai client IRC, et avec netcat. Le serveur respecte donc le protocole utilisé par les clients existants."
+    }
   }
 }
