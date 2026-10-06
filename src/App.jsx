@@ -5,14 +5,16 @@ import About from './components/About'
 import MobileChannels from './components/MobileChannels'
 import ChannelHeader from './components/ChannelHeader'
 import Skills from './components/Skills'
+import Contact from './components/Contact'
 
 const channelComponents = {
   about: About,
   skills: Skills,
+  contact: Contact,
 }
 
 export default function App() {
-  const [activeChannel, setActiveChannel] = useState('about')
+  const [activeChannel, setActiveChannel] = useState('about') // Quels channels est ouvert ? Init a About
   const ActiveChannel = channelComponents[activeChannel]
 
   return (

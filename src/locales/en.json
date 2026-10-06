@@ -49,5 +49,11 @@
     },
     "basics": "basics",
     "soft": ["Team lead", "Task distribution", "Teamwork", "Methodical debugging"]
+  },
+
+  "contact": {
+    "intro": "A work-study position, an internship, or just a question? Feel free to reach out.",
+    "copy": "copy",
+    "copied": "copied ✓"
   }
 }

@@ -49,5 +49,11 @@
     },
     "basics": "notions",
     "soft": ["Lead d'équipe", "Répartition des tâches", "Travail en équipe", "Débogage méthodique"]
+  },
+
+  "contact": {
+    "intro": "Une alternance, un stage, ou simplement une question ? N'hésitez pas à m'écrire.",
+    "copy": "copier",
+    "copied": "copié ✓"
   }
 }
