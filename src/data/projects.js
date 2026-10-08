@@ -20,7 +20,7 @@ export const projects = {
     repo: 'https://github.com/Camillia9/minishell',
     pinned: ['overview', 'role', 'challenge'],
   },
-    cub3D: {
+    cub3d: {
     stack: ['C', 'raycasting', 'MiniLibX'],
     lead: 'null',
     members: ['Camillia', 'Mary-Line'],

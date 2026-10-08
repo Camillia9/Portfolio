@@ -14,6 +14,8 @@ const channelComponents = {
   contact: Contact,
   ft_transcendence: ProjectChannel,
   ft_irc: ProjectChannel,
+  minishell: ProjectChannel,
+  cub3d: ProjectChannel,
 }
 
 export default function App() {
