@@ -19,7 +19,7 @@ export default function ProjectChannel({ id }) {
 				{project.pinned.map((key) => (
 					<article key={key} className="bg-card/40 border-l-2 border-lavender rounded-r-lg p-4">
 						<h3 className="font-mono text-xs text-lavender">
-							📌 {t(`projects.pinnedTitles.${key}`)}
+							→ {t(`projects.pinnedTitles.${key}`)}
 						</h3>
 						<p className="text-white/80 leading-relaxed mt-2">
               {t(`projects.${id}.${key}`)}
