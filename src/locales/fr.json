@@ -28,7 +28,8 @@
       "ft_transcendence": "Gestion de projet collaborative façon Trello",
       "ft_irc": "Serveur de messagerie multi-clients en C++",
       "minishell": "Un shell Unix simplifié, inspiré de bash",
-      "cub3d": "Un moteur 3D par raycasting, façon Wolfenstein 3D"
+      "cub3d": "Un moteur 3D par raycasting, façon Wolfenstein 3D",
+      "inception": "Une infrastructure web conteneurisée avec Docker"
     }
   },
 
@@ -70,7 +71,8 @@
       "overview": "Le projet",
       "role": "Mon rôle",
       "challenge": "Le défi",
-      "tests": "Les tests"
+      "tests": "Les tests",
+      "learned": "Ce que j'en retiens"
     },
     "ft_transcendence": {
       "overview": "Une application web de gestion de projet collaborative, dans l'esprit de Trello. On crée une organisation, plusieurs projets, et chacun répartit et suit ses tâches sur un tableau.",
@@ -91,6 +93,10 @@
       "overview": "Un moteur de jeu en vue subjective, façon Wolfenstein 3D, codé en C. À partir d'une carte en 2D, il affiche un labyrinthe texturé en 3D, dans lequel le joueur se déplace en temps réel.",
       "role": "J'ai développé tout le raycasting : lancer un rayon par colonne de l'écran, calculer la distance jusqu'au mur touché, puis en déduire la hauteur du mur à dessiner pour créer l'illusion de la 3D.",
       "challenge": "Les calculs géométriques, et en particulier l'effet « fish-eye », qui courbait les murs sur les bords de l'écran. Il se corrige en utilisant la distance perpendiculaire au plan de la caméra, plutôt que la longueur réelle du rayon."
+    },
+    "inception": {
+      "overview": "Une infrastructure web complète, découpée en plusieurs services qui tournent chacun dans leur propre conteneur Docker : un serveur NGINX sécurisé en TLS, un site WordPress et une base de données MariaDB, orchestrés avec Docker Compose. Chaque image est construite à partir de mon propre Dockerfile, sans image toute faite.",
+      "learned": "C'est le projet qui m'a donné le plus de fil à retordre : une configuration minutieuse, une documentation dense, des conteneurs qui refusaient de communiquer entre eux et des erreurs difficiles à diagnostiquer à l'intérieur d'un conteneur. Mais c'est aussi celui qui m'a appris à lire les logs pour comprendre pourquoi un conteneur plante, à écrire et lire un docker-compose.yml, et à comprendre pourquoi un projet fonctionne sur une machine et pas sur une autre. Des compétences que j'ai directement réutilisées pour faire tourner ft_transcendence avec Docker."
     }
   }
 }

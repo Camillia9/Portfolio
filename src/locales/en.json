@@ -28,7 +28,8 @@
       "ft_transcendence": "Collaborative project management, Trello-style",
       "ft_irc": "Multi-client messaging server in C++",
       "minishell": "A simplified Unix shell, inspired by bash",
-      "cub3d": "A raycasting 3D engine, Wolfenstein 3D-style"
+      "cub3d": "A raycasting 3D engine, Wolfenstein 3D-style",
+      "inception": "A containerized web infrastructure with Docker"
     }
   },
 
@@ -70,7 +71,8 @@
       "overview": "The project",
       "role": "My role",
       "challenge": "The challenge",
-      "tests": "Testing"
+      "tests": "Testing",
+      "learned": "What I took away"
     },
     "ft_transcendence": {
       "overview": "A collaborative project management web app, Trello-style. Users create an organization and several projects, then assign and track tasks on a board.",
@@ -91,6 +93,10 @@
       "overview": "A first-person game engine, Wolfenstein 3D-style, written in C. From a 2D map, it renders a textured 3D maze that the player can move through in real time.",
       "role": "I built the entire raycasting: casting one ray per screen column, computing the distance to the wall it hits, then deriving the height of the wall to draw to create the illusion of 3D.",
       "challenge": "The geometry, especially the fish-eye effect, which curved the walls at the edges of the screen. It's fixed by using the perpendicular distance to the camera plane instead of the actual length of the ray."
+    },
+    "inception": {
+      "overview": "A complete web infrastructure split into several services, each running in its own Docker container: an NGINX server secured with TLS, a WordPress site and a MariaDB database, orchestrated with Docker Compose. Every image is built from my own Dockerfile, without any ready-made image.",
+      "learned": "This was the project that challenged me the most: meticulous configuration, dense documentation, containers that refused to talk to each other, and errors that were hard to diagnose from inside a container. But it's also the one that taught me to read logs to understand why a container crashes, to write and read a docker-compose.yml file, and to understand why a project works on one machine but not on another. I reused these skills directly to run ft_transcendence with Docker."
     }
   }
 }

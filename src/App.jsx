@@ -16,6 +16,7 @@ const channelComponents = {
   ft_irc: ProjectChannel,
   minishell: ProjectChannel,
   cub3d: ProjectChannel,
+  inception: ProjectChannel,
 }
 
 export default function App() {
