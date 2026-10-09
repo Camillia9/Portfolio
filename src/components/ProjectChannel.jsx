@@ -7,7 +7,7 @@ export default function ProjectChannel({ id }) {
 	const project = projects[id]
 
 	return (
-    <div className="mt-6 grid gap-6 md:grid-cols-[minmax(0,1fr)_12rem]">
+    <div className="mt-6 grid gap-6">
 			<div className="space-y-4 max-w-3xl">
 				<p className="font-mono text-sm text-white/40">
 					{t('projects.labels.modes')}:{' '}
@@ -33,10 +33,11 @@ export default function ProjectChannel({ id }) {
 					rel="noopener noreferrer"
 					className="inline-flex items-center gap-2 bg-action text-white px-5 py-2.5 rounded-lg hover:bg-card transition-colors"
 				>
-					<FaGithub />
+					<FaGithub /> {t('projects.labels.repo')}
 				</a>
+						</div>
 
-				<aside className="order-first md:order-0 font-mono text-sm md:border-l md:border-card md:pl-4">
+				<aside className="order-first md:order-0 font-mono text-sm -l">
 					<h3 className="text-white/40 text-xs uppercase mb-2">
 						{t('projects.labels.members')} · {project.members.length}
 					</h3>
@@ -48,7 +49,6 @@ export default function ProjectChannel({ id }) {
           ))}
         </ul>
 				</aside>
-			</div>
 		</div>
 
 	)
