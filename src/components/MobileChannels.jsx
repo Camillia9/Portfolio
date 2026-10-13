@@ -8,7 +8,7 @@ export default function MobileChannels({ activeChannel, onSelect }) {
 	const allChannels = [...channels.general, ...channels.projects]
 
 	return (
-    <div className="md:hidden border-b border-card font-mono text-sm">
+    <div className="md:hidden border-b border-line glow-b font-mono text-sm">
       <div className="flex justify-between items-center px-4 pt-3 gap-4">
         <p className="text-white/60 text-xs">● {t('hero.status')}</p>
         <SocialLinks className="text-lg shrink-0" />

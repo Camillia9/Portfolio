@@ -28,7 +28,7 @@ export default function Sidebar({ activeChannel, onSelect }) {
   const { t } = useTranslation()
 
   return (
-    <aside className="hidden md:sticky md:top-0 md:flex md:h-[calc(100vh-45px)] md:flex-col w-60 shrink-0 border-r border-card p-4 font-mono text-sm">
+    <aside className="hidden md:sticky md:top-0 md:flex md:h-[calc(100vh-45px)] md:flex-col w-60 shrink-0 border-r border-b border-line glow-r p-4 font-mono text-sm">
       <div>
         <p className="text-white font-medium">@camillia</p>
         <p className="text-lavender text-xs mt-1">{t('hero.role')}</p>

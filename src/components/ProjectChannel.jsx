@@ -6,6 +6,8 @@ export default function ProjectChannel({ id }) {
 	const { t } = useTranslation()
 	const project = projects[id]
 
+	if (!project) return <p className="text-white/60 mt-4">Bientôt…</p>
+	
 	return (
     <div className="mt-6 grid gap-6">
 			<div className="space-y-4 max-w-3xl">

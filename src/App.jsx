@@ -1,47 +1,71 @@
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
-import About from './components/About'
 import MobileChannels from './components/MobileChannels'
 import ChannelHeader from './components/ChannelHeader'
+import About from './components/About'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
 import ProjectChannel from './components/ProjectChannel'
+import { channels } from './data/channels'
 
 const channelComponents = {
   about: About,
   skills: Skills,
   contact: Contact,
-  ft_transcendence: ProjectChannel,
-  ft_irc: ProjectChannel,
-  minishell: ProjectChannel,
-  cub3d: ProjectChannel,
-  inception: ProjectChannel,
 }
 
+const allChannels = [...channels.general, ...channels.projects]
+
 export default function App() {
-  const [activeChannel, setActiveChannel] = useState('about') // Quels channels est ouvert ? Init a About
-  const ActiveChannel = channelComponents[activeChannel]
+  const [activeChannel, setActiveChannel] = useState('about')
+  const mainRef = useRef(null)
+
+  const goTo = (id) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+    setActiveChannel(id)
+  }
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) setActiveChannel(entry.target.id)
+        })
+      },
+      { root: mainRef.current, rootMargin: '-40% 0px -50% 0px' }
+    )
+
+    allChannels.forEach((id) => {
+      const section = document.getElementById(id)
+      if (section) observer.observe(section)
+    })
+
+    return () => observer.disconnect()
+  }, [])
 
   return (
-    <div className="min-h-screen bg-night flex flex-col">
+    <div className="h-screen bg-night flex flex-col">
       <Navbar />
-      <div className="flex flex-col md:flex-row flex-1">
-        <Sidebar
-          activeChannel={activeChannel}
-          onSelect={setActiveChannel}
-        />
-        <MobileChannels
-          activeChannel={activeChannel}
-          onSelect={setActiveChannel}
-        />
-        <main className="flex-1 p-4 md:p-6">
-          <ChannelHeader id={activeChannel} />
-          {ActiveChannel ? (
-            <ActiveChannel key={activeChannel} id={activeChannel} onSelect={setActiveChannel} />
-          ) : (
-            <p className="text-white/60 mt-4">Bientôt…</p>
-          )}
+      <div className="flex flex-col md:flex-row flex-1 min-h-0">
+        <Sidebar activeChannel={activeChannel} onSelect={goTo} />
+        <MobileChannels activeChannel={activeChannel} onSelect={goTo} />
+        <main ref={mainRef} className="flex-1 overflow-y-auto snap-y snap-mandatory">
+          {allChannels.map((id) => {
+            const Channel = channels.projects.includes(id) ? ProjectChannel : channelComponents[id]
+            return (
+              <section
+                key={id}
+                id={id}
+                className={`snap-start min-h-full p-4 md:p-6 transition-opacity duration-500 ${
+                  activeChannel === id ? 'opacity-100' : 'opacity-0'
+                }`}
+              >
+                <ChannelHeader id={id} />
+                {Channel ? <Channel id={id} onSelect={goTo} /> : <p className="text-white/60 mt-4">Bientôt…</p>}
+              </section>
+            )
+          })}
         </main>
       </div>
     </div>
