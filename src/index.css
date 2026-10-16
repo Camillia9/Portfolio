@@ -19,6 +19,15 @@
 
   /*--color-glow: var(--color-line);*/
   --color-glow: transparent;
+
+  /*Intro */
+  --font-pixel: "VT323", monospace;
+  --color-pixel: #8CFF8C;
+  --animate-blink: blink 1s step-end infinite;
+
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
 }
 
 @utility glow-b {
@@ -27,6 +36,10 @@
 
 @utility glow-r {
   box-shadow: 6px 0 12px -6px var(--color-glow);
+}
+
+@utility text-glow {
+  text-shadow: 0 0 6px var(--color-pixel), 0 0 18px var(--color-pixel);
 }
 
 html {

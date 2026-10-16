@@ -1,4 +1,8 @@
 {
+  "intro": {
+    "enter": "click to enter"
+  },
+
   "sidebar": {
     "general": "General",
     "projects": "Projects"

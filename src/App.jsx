@@ -7,6 +7,7 @@ import About from './components/About'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
 import ProjectChannel from './components/ProjectChannel'
+import Intro from './components/Intro'
 import { channels } from './data/channels'
 
 const channelComponents = {
@@ -20,6 +21,23 @@ const allChannels = [...channels.general, ...channels.projects]
 export default function App() {
   const [activeChannel, setActiveChannel] = useState('about')
   const mainRef = useRef(null)
+
+  const [entered, setEntered] = useState(() => {
+    try {
+      return sessionStorage.getItem('introSeen') === 'true'
+    } catch {
+      return false
+    }
+  })
+  
+  const handleEnter = () => {
+    try {
+      sessionStorage.setItem('introSeen', 'true')
+    } catch {
+      // si Stockage indisponible: L'INTRO se rejouera. evite les crash
+    }
+    setEntered(true)
+  }
 
   const goTo = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
@@ -46,6 +64,7 @@ export default function App() {
 
   return (
     <div className="h-screen bg-night flex flex-col">
+      {!entered && <Intro onEnter={handleEnter} />}
       <Navbar />
       <div className="flex flex-col md:flex-row flex-1 min-h-0">
         <Sidebar activeChannel={activeChannel} onSelect={goTo} />
